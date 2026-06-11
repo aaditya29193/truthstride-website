@@ -3,12 +3,9 @@
 import Image from "next/image";
 import { FormEvent, useEffect, useMemo, useState } from "react";
 
-const heroImage =
-  "https://static.prod-images.emergentagent.com/jobs/fd222154-4a82-431c-be80-7175356fc139/images/e46b3d63fe4c06eb6eaca64bb601460517ba1d34884e6345554fbe6b13148aaa.png";
-const problemImage =
-  "https://static.prod-images.emergentagent.com/jobs/fd222154-4a82-431c-be80-7175356fc139/images/3e043e01b9f4869ec00aea9c4ef703ad236ecd974b55739f3ea621cf2785daf7.png";
-const dashboardImage =
-  "https://static.prod-images.emergentagent.com/jobs/fd222154-4a82-431c-be80-7175356fc139/images/8d6853aba35bd665391ef091f1e2598a5df14fe445c0a79e1e73347d0a11fdbf.png";
+const heroImage = "/signal_image.png";
+const problemImage = "/drift_image.png";
+const dashboardImage = "/velocity_image.png";
 
 const steps = [
   {
@@ -20,7 +17,7 @@ const steps = [
   {
     number: "02",
     title: "Analyze every signal",
-    body: "We read PRs, merges, deploy events, Slack threads, stand-up notes and meeting transcripts. BuildTruth extracts intent, decisions and timestamps, not just activity.",
+    body: "We read PRs, merges, deploy events, Slack threads, stand-up notes and meeting transcripts. TruthStride extracts intent, decisions and timestamps, not just activity.",
     tags: ["PR reviews", "Decisions", "Deploy events", "Bottlenecks"],
   },
   {
@@ -120,7 +117,7 @@ function Header() {
             B
             <span className="brand-dot" />
           </span>
-          <span className="brand-name">BuildTruth</span>
+          <span className="brand-name">TruthStride</span>
         </a>
 
         <nav className="hidden items-center gap-8 text-sm text-neutral-600 md:flex">
@@ -361,7 +358,7 @@ export default function LandingPage() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-neutral-600">
-                BuildTruth pulls signals from Git, Slack, Teams, and meeting notes to
+                TruthStride pulls signals from Git, Slack, Teams, and meeting notes to
                 auto-update your tickets: sprint points, dates, PR reviews, production
                 rollouts, and decisions. Your dashboard finally reflects the work that
                 actually happened.
@@ -459,7 +456,7 @@ export default function LandingPage() {
               <p className="section-index">02 — How it works</p>
               <h2 className="section-title">Three steps from chaos to clarity.</h2>
               <p className="section-copy">
-                No new tool for your team to learn. BuildTruth lives behind the systems
+                No new tool for your team to learn. TruthStride lives behind the systems
                 you already use and surfaces the truth in the dashboards your leaders
                 already read.
               </p>
@@ -497,7 +494,7 @@ export default function LandingPage() {
               <div className="lg:col-span-7">
                 <p className="text-base leading-relaxed text-neutral-600 sm:text-lg">
                   Git for what shipped. Slack and Teams for what was discussed. Meeting notes
-                  for what was decided. BuildTruth connects to them all and writes the
+                  for what was decided. TruthStride connects to them all and writes the
                   complete story back into your ticket system.
                 </p>
               </div>
@@ -593,12 +590,12 @@ export default function LandingPage() {
 
       <footer className="border-t border-white/10 bg-neutral-950 text-neutral-400">
         <div className="shell flex flex-col items-start justify-between gap-6 py-10 sm:flex-row sm:items-center">
-          <div className="footer-brand flex flex-wrap items-center gap-2">
+            <div className="footer-brand flex flex-wrap items-center gap-2">
             <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-white font-[family-name:var(--font-display)] text-[13px] font-bold text-neutral-950">
               B
             </span>
             <span className="font-[family-name:var(--font-display)] font-semibold tracking-tight text-white">
-              BuildTruth
+              TruthStride
             </span>
             <span className="footer-tagline ml-0 text-xs font-mono text-neutral-500 sm:ml-3">
               THE REALITY LAYER FOR ENGINEERING
@@ -612,7 +609,7 @@ export default function LandingPage() {
             <a href="#waitlist">Waitlist</a>
           </div>
 
-          <div className="text-xs text-neutral-500">© {new Date().getFullYear()} BuildTruth. All rights reserved.</div>
+          <div className="text-xs text-neutral-500">© {new Date().getFullYear()} TruthStride. All rights reserved.</div>
         </div>
       </footer>
     </div>

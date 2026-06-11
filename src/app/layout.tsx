@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "BuildTruth | Launch Waitlist",
-  description: "Landing page and waitlist flow for BuildTruth.",
+  title: "TruthStride | Launch Waitlist",
+  description: "Landing page and waitlist flow for TruthStride.",
 };
 
 export default function RootLayout({

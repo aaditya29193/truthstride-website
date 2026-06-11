@@ -1,4 +1,4 @@
-# BuildTruth Landing Page
+# TruthStride Landing Page
 
 This project is a Next.js landing page with a waitlist form. The form submits to a Next.js API route at `/api/waitlist`, and that route can forward each signup into a Google Sheet through a Google Apps Script webhook.
 
